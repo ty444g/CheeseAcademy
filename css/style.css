@@ -1,0 +1,376 @@
+/* ここから下に記載していく */
+.logo {
+  width: 240px;
+  margin: 0 24px;
+}
+.menu {
+  font-size: 21px;
+  margin-right: 50px;
+}
+.menu-links {
+  padding: 50px 0px;
+}
+
+@media screen and (max-width: 1080px) {
+  .hamburger-menu_list {
+      background-color: #eeeeee; /* カスタマイズしてください */
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      left: 0;
+      padding: 2rem; /* カスタマイズしてください */
+      position: absolute;
+      transform: translateX(-100%);
+      transition: 0.3s; /* カスタマイズしてください */
+      top: 100%;
+      width: 100%;
+  }
+}
+
+.fv {
+  background-image: url("../img/mainbg.png");
+  /* 画像を常に天地左右の中央に配置 */
+  background-position: center center;
+  /* 画像をタイル状に繰り返し表示しない */
+  background-repeat: no-repeat;
+  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 640px;
+}
+
+section {
+  width: 100%;
+}
+
+.heading {
+  padding: 0 16px;
+}
+
+h1{
+  text-align: center;
+  color: white;
+  padding-bottom: 30px;
+}
+h2 {
+  text-align: center;
+  color: white;
+}
+h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+#ABOUT h3 {
+  color: #ffd61a;
+}
+h4 {
+  text-align: center;
+  font-size: 18px;
+  color: #222222;
+  margin-bottom: 60px;
+}
+h5 {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+p {
+  font-size: 16px;
+  color: #222222;
+  line-height: 24px;
+}
+
+.heading p {
+  margin-bottom: 60px;
+}
+.explanation {
+  background-color: #fafafa;
+}
+.text-container-right {
+  width: 480px;
+  padding-left: 50px;
+}
+.text-container-left {
+  width: 480px;
+  padding-right: 50px;
+  margin: 0 0 0 auto;
+}
+
+@media screen and (max-width: 1080px) {
+  .explanation {
+      display: block;
+      flex-direction: column-reverse;
+      display: flex;
+      padding-bottom: 80px;
+  }
+  .course-img {
+      width: 80%;
+      height: 400px;
+      object-fit: cover;
+      margin: 0 auto;
+      order: 1;
+  }
+  .text-wrapper {
+      width: 100%;
+      order: 2;
+  }
+  .text-container-left, .text-container-right {
+      width: 100%;
+      padding: 40px;
+  }
+
+  .explanation h5 {
+      text-align: center;
+  }
+  .explanation p {
+      width: 100%;
+      text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .course-img {
+      width: 100%;
+      height: 320px;
+  }
+}
+
+
+#NEWS {
+  text-align: center;
+}
+.news-article {
+  width: 300px;
+}
+.date {
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+.news-article p {
+  width: 100%;
+}
+.news-article img {
+  width: 100%;
+
+}
+.news-items {
+  gap: 50px;
+  margin-bottom: 60px;
+}
+.button-wrapper {
+  margin-bottom: 60px;
+  text-align: center;
+
+}
+.button {
+  width: 300px;
+  height: 60px;
+  padding: 20px;
+  background-color: #ffd61a;
+  display: inline-block;
+  color: white;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1080px) {
+  .scroll-box {
+      overflow-x: auto;
+      padding-bottom: 10px;
+      -webkit-overflow-scrolling: touch;
+  }
+  /*===========
+  scrollbar
+  ===========*/
+  /*スクロールバー全体の高さ*/
+  .scroll-box::-webkit-scrollbar {
+      height: 4px;
+  }
+  /*スクロールバー全体の背景*/
+  .scroll-box::-webkit-scrollbar-track {
+      background: #eee;
+  }
+  /*スクロールバーの動く部分*/
+  .scroll-box::-webkit-scrollbar-thumb {
+      background: #aaa;
+      border: none;
+  }
+  /*スクロールバーの動く部分のホバー（マウスオーバー）*/
+  .scroll-box::-webkit-scrollbar-thumb:hover {
+      background: #999;
+  }
+
+  /*===========
+  .news-items
+  ===========*/
+  .scroll-box .news-items {
+      display: flex;
+      margin: 0 40px;
+      gap: 20px;
+      overflow-x: scroll;
+      padding: 0 0 15px;
+  }
+  .scroll-box .news-items .news-article {
+      width: 300px;
+      display: block;
+      overflow: hidden;
+      backface-visibility: hidden;
+  }
+  .scroll-box {
+  overflow-x: auto;
+  }
+
+@media screen and (max-width: 767px) {
+  .scroll-box .news-items {
+      justify-content: left;
+      margin: 0 0 40px 16px;
+  }
+  .scroll-box .news-items .news-article {
+  flex: 0 0 70%;
+  }
+}
+}
+
+
+#ACCESS {
+  background-color: #fafafa;
+  padding: 60px 0;
+}
+.table {
+  margin: 60px 0;
+  width: 100%;
+}
+.table-item {
+  width: 520px;
+  height: 50px;
+  display: flex;
+  margin: 0 auto;
+}
+.left {
+  width: 160px;
+  text-align: left;
+  color: #707070;
+}
+.right {
+  width: 360px;
+  text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  .table-item {
+      width: 100%;
+      display: block;
+      margin: 0 16px 16px 16px;
+  }
+  .table-item .left {
+      margin-bottom: 4px;
+  }
+  .table-item .right {
+      width: 100%;
+  }
+}
+
+.text {
+  text-align: center;
+}
+.first-line {
+  margin-bottom: 30px;
+}
+.second-line {
+  margin-bottom: 70px;
+}
+.form-container {
+  width: 100%;
+}
+.form-item {
+  display: flex;
+  border-bottom: solid;
+  border-color: #bfbfbf;
+  width: max-content;
+  margin: 0 auto;
+}
+.label {
+  width: 240px;
+  padding: 8px 64px 8px 16px;
+  font-weight: 700;
+}
+.input-area {
+  width: 400px;
+  padding: 8px;
+}
+input, select {
+  border: solid;
+  border-color: #bfbfbf;
+  width: 328px;
+  border-radius: 4px;
+  padding: 8px;
+}
+.checkbox {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.checkbox input {
+  width: 20px;
+  height: 20px;
+}
+textarea {
+  border: solid;
+  border-color: #bfbfbf;
+  width: 328px;
+  height: 120px;
+  padding: 8px;
+  border-radius: 4px;
+}
+label {
+  font-size: 14px;
+}
+.submit-button {
+  width: 300px;
+  height: 60px;
+  margin-top: 30px;
+  margin-bottom: 140px;
+  background-color: #ffd61a;
+  border: none;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .form-item {
+  display: block;
+  width: 80%;
+  border-bottom: none;
+  }
+  .label {
+      width: 100%;
+      padding: 0;
+      margin-top: 24px;
+      margin-bottom: 8px;
+  }
+  .input-area {
+      width: 100%;
+      padding: 0;
+  }
+  input, select, textarea {
+      width: 100%;
+  }
+  .submit-button {
+      margin-bottom: 40px;
+  }
+}
+
+footer {
+  padding: 30px 0;
+  text-align: center;
+  background-color: #707070;
+}
+footer p {
+  font-size: 14px;
+  color: white;
+}
