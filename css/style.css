@@ -1,0 +1,387 @@
+/* ここから下に記載していく */
+body {
+  min-width: 1400px;
+  color: #222222;
+
+}
+
+h3 {
+  font-size: 24px;
+  color: #222222;
+  font-weight: bold;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+h4 {
+font-size: 18px;
+color: #222222;
+text-align: center;
+line-height: 1.8;
+}
+
+
+/* ヘッダー用 */
+.header__nav {
+    background-color: white;
+    display: flex;
+    align-items: center;
+  }
+
+  .header__logo {
+    padding-left: 16px;
+  }
+  
+  .header__menu {
+    display: flex;
+    margin-left: auto;
+    justify-content: space-between;
+  }
+  
+  .header__menu-item {
+    margin: 50px;
+  }
+  
+  .header__menu-link {
+    font-size: 21px;
+    color: #222222;
+  }
+
+/* メインビジュアル用 */
+.mainvisual{
+  background-image: url('../img/mainbg.png');
+  padding: 160px;
+}
+
+.mv__message{
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.mv__title{
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+
+
+/* about */
+.titles{
+  padding: 60px;
+}
+
+
+.title {
+  font-size: 24px;
+  color: #222222;
+  font-weight: bold;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.subtitle{
+  font-size: 18px;
+  color: #222222;
+  text-align: center;
+  line-height: 1.8;
+}
+
+
+
+.yellow{
+  color: #ffd61a;
+}
+
+
+.p__about{
+  padding-bottom: 80px;
+}
+
+.p__about_contents{
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+/* COURSE */
+.content_1{
+  display: flex;
+}
+
+.content_left_img{
+  width: 50%;
+}
+
+.content_left_img_img{
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;  
+}
+
+.content_right{
+  display: flex;
+  flex-direction: column;  
+  justify-content: center; 
+  background-color: #fafafa;
+  width: 50%;
+
+}
+
+.content_right_title{
+  text-align: left;
+  padding-left: 50px;
+  width: 540px;
+}
+
+.content_right_info{
+  text-align: left;
+  padding-left: 50px;
+  width: 540px;
+}
+
+
+.content_2{
+  display: flex;
+}
+
+.content_right_img{
+  width: 50%;
+}
+
+.content_right_img_img{
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;  
+}
+
+.content_left{
+  display: flex;
+  justify-content: right; 
+  background-color: #fafafa;
+  width: 50%;
+
+}
+
+.content_left_text{
+  display: flex;
+  flex-direction: column;  
+  justify-content: center; 
+  padding-right: 50px;
+}
+
+.content_left_title{
+  text-align: left;
+}
+
+.content_left_info{
+  text-align: left;
+}
+
+.content_3{
+  display: flex;
+}
+
+
+
+
+/* news */
+.news__cards{
+  display: flex;
+  justify-content: center;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  width: 300px;
+  margin-left: 30px;
+}
+
+
+.card__newsdate{
+  margin-top: 30px;
+  margin-bottom: 24px;
+
+}
+
+.card__content{
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+
+.btn{
+  display: flex;
+  justify-content: center;
+}
+
+.more__btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 60px;
+  font-size: 16px;
+  background-color: #ffd61a;
+  color: #fafafa;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 60px auto;
+}
+
+.more__btn:hover {
+  background-color: gray; /* ホバー時に色を少し変える */
+}
+
+/* access */
+.access_sec{
+  background-color: #fafafa;
+}
+
+.table {
+  width: 100%; /* テーブル全体の幅 */
+  max-width: 600px; /* 最大幅を指定（お好み） */
+  margin: 60px auto; /* 中央寄せ */
+}
+
+.table-item {
+  display: flex; /* 横並びにする */
+  padding: 30px 0; /* 上下に余白 */
+}
+
+.left {
+  width: 30%; /* 左のカラムの幅 */
+}
+
+.right {
+  width: 70%; /* 右のカラムの幅 */
+}
+
+
+/* contact */
+.h4__contact{
+  margin-top: 30px;
+}
+
+
+
+.entry__form{
+  display: flex;
+  flex-direction: column;  
+  align-items: center; 
+  width: 100%;
+  margin-top: 70px;
+}
+
+
+
+
+.form__group{
+  display: flex;
+  align-items: stretch;
+  border-top: 1px solid #ccc; /* 下線だけ引く */
+  border-bottom: 1px solid #ccc; /* 下線だけ引く */
+  padding: 8px 0px;
+  width: 680px;
+}
+
+.form__label {
+  width: 35%;
+  padding-left: 16px;
+  padding-right: 64px;
+  border-right: 1px solid #ccc; /* ← ここでボーダーを入れる！ */
+}
+
+.form__input {
+  width: 65%;
+  padding-left: 8px;
+  
+}
+
+
+
+
+input[type="text"],
+input[type="email"],
+select,
+textarea{
+  width: 428px;
+  height: 36px;
+  border: 1px solid #bfbfbf;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: auto;
+}
+
+.checkbox__group{
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+
+
+.checkbox__group label {
+  display: flex;
+  align-items: center;
+  width: 428px;
+  font-weight: normal;
+  font-size: 16px;
+  margin: 24px 0px;
+}
+
+
+
+.sousin__btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 60px;
+  font-size: 16px;
+  background-color: #ffd61a;
+  color: #fafafa;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 30px;
+  margin-bottom: 140px;
+}
+
+.sousin__btn:hover {
+  background-color: gray; /* ホバー時に色を少し変える */
+}
+
+
+/* footer */
+.footer{
+  color: white;
+  font-size: 16px;
+  background-color: #707070;
+  padding: 30px;
+  text-align: center;
+}
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
